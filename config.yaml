@@ -1,0 +1,18 @@
+# Configuración del modelo y procesamiento
+stable_diffusion:
+  model_id: runwayml/stable-diffusion-v1-5
+  output_dir: output
+  device: "cuda"
+  negative_prompt: "Sin objetos adicionales, sin personas, sin autos"
+
+opencv:
+  canny_threshold1: 50
+  canny_threshold2: 150
+  hough_threshold: 100
+  min_line_length: 100
+  max_line_gap: 10
+
+output_paths:
+  image_path: "output/casa_generada.png"
+  cad_path: "output/plano_cad.png"
+  obj_path: "output/modelo_casa.obj"
